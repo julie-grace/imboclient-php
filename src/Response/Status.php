@@ -7,9 +7,9 @@ use Psr\Http\Message\ResponseInterface;
 
 class Status
 {
-    private DateTime $date;
-    private bool $databaseStatus;
-    private bool $storageStatus;
+    private $date;
+    private $databaseStatus;
+    private $storageStatus;
 
     public function __construct(DateTime $date, bool $databaseStatus, bool $storageStatus)
     {

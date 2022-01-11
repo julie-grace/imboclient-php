@@ -3,8 +3,8 @@ namespace ImboClient;
 
 class Query
 {
-    private int $page = 1;
-    private int $limit = 20;
+    private $page = 1;
+    private $limit = 20;
 
     /**
      * @return static

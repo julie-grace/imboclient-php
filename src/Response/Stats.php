@@ -7,10 +7,10 @@ use Psr\Http\Message\ResponseInterface;
 
 class Stats
 {
-    private int $numImages;
-    private int $numUsers;
-    private int $numBytes;
-    private array $customStats;
+    private $numImages;
+    private $numUsers;
+    private $numBytes;
+    private $customStats;
 
     public function __construct(int $numImages, int $numUsers, int $numBytes, array $customStats = [])
     {

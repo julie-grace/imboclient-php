@@ -7,7 +7,7 @@ use Throwable;
 
 class InvalidResponseBodyException extends RuntimeException implements ClientException
 {
-    private ResponseInterface $response;
+    private $response;
 
     public function __construct(string $message, ResponseInterface $response, Throwable $previous = null)
     {

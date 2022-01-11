@@ -7,13 +7,13 @@ use ImboClient\Exception\InvalidImageTransformationException;
 class ImageUrl extends AccessTokenUrl
 {
     /** @var array<string> */
-    private array $validExtensions = [
+    private $validExtensions = [
         'gif',
         'jpg',
         'png',
     ];
 
-    private string $imageIdentifier;
+    private $imageIdentifier;
 
     public function __construct(string $url, string $privateKey)
     {

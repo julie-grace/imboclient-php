@@ -11,12 +11,12 @@ use Psr\Http\Message\ResponseInterface;
 
 class ClientTest extends TestCase
 {
-    private Client $client;
-    private string $imboUrl = 'http://imbo';
-    private string $user = 'testuser';
-    private string $publicKey = 'christer';
-    private string $privateKey = 'test';
-    private ArrayObject $historyContainer;
+    private $client;
+    private $imboUrl = 'http://imbo';
+    private $user = 'testuser';
+    private $publicKey = 'christer';
+    private $privateKey = 'test';
+    private $historyContainer;
 
     protected function setUp(): void
     {

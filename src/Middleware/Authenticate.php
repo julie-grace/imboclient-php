@@ -7,8 +7,8 @@ use Psr\Http\Message\RequestInterface;
 
 class Authenticate
 {
-    private string $publicKey;
-    private string $privateKey;
+    private $publicKey;
+    private $privateKey;
 
     public function __construct(string $publicKey, string $privateKey)
     {

@@ -3,13 +3,13 @@ namespace ImboClient;
 
 class ImagesQuery extends Query
 {
-    private bool $metadata = false;
-    private ?int $from = null;
-    private ?int $to = null;
-    private array $ids = [];
-    private array $checksums = [];
-    private array $originalChecksums = [];
-    private array $sort = [];
+    private $metadata = false;
+    private $from = null;
+    private $to = null;
+    private $ids = [];
+    private $checksums = [];
+    private $originalChecksums = [];
+    private $sort = [];
 
     public function withMetadata(bool $metadata): self
     {

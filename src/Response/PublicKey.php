@@ -7,7 +7,7 @@ use Psr\Http\Message\ResponseInterface;
 
 class PublicKey
 {
-    private string $publicKey;
+    private $publicKey;
 
     public function __construct(string $publicKey)
     {

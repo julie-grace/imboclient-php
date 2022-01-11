@@ -37,11 +37,11 @@ class Client
     public const MAJOR_VERSION = 3;
 
     /** @var array<string> */
-    private array $baseUrls;
-    private string $user;
-    private string $publicKey;
-    private string $privateKey;
-    private GuzzleHttpClient $httpClient;
+    private $baseUrls;
+    private $user;
+    private $publicKey;
+    private $privateKey;
+    private $httpClient;
 
     /**
      * Class constructor
@@ -58,7 +58,12 @@ class Client
             $baseUrls = [$baseUrls];
         }
 
-        $this->baseUrls = array_map(fn (string $url): string => rtrim($url, '/'), $baseUrls);
+        $this->baseUrls = array_map(
+            function ($url) {
+                return rtrim($url, '/');
+            },
+            $baseUrls
+        );
         $this->user = $user;
         $this->publicKey = $publicKey;
         $this->privateKey = $privateKey;

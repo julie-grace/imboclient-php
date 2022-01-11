@@ -6,7 +6,7 @@ use GuzzleHttp\Psr7\Utils;
 
 class AccessTokenUrl extends Uri
 {
-    private string $privateKey;
+    private $privateKey;
 
     public function __construct(string $url, string $privateKey)
     {

@@ -7,9 +7,9 @@ use Psr\Http\Message\ResponseInterface;
 
 class User
 {
-    private string $user;
-    private int $numImages;
-    private DateTime $lastModified;
+    private $user;
+    private $numImages;
+    private $lastModified;
 
     public function __construct(string $user, int $numImages, DateTime $lastModified)
     {

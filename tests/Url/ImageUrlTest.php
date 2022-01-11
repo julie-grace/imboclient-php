@@ -10,7 +10,7 @@ use PHPUnit\Framework\TestCase;
  */
 class ImageUrlTest extends TestCase
 {
-    private ImageUrl $url;
+    private $url;
 
     protected function setUp(): void
     {

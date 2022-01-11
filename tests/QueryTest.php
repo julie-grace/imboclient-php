@@ -8,7 +8,7 @@ use PHPUnit\Framework\TestCase;
  */
 class QueryTest extends TestCase
 {
-    private Query $query;
+    private $query;
 
     protected function setUp(): void
     {
